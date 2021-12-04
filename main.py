@@ -3,8 +3,8 @@ from UnionJsonFile import UnionJson
 from WriteFIle import WriterJson, WriterXml
 
 
-
 def main(students, rooms, format_in):
+    """This function is the controller"""
 
     students_dict = ReadJson().read_json(students)
     rooms_dict = ReadJson().read_json(rooms)

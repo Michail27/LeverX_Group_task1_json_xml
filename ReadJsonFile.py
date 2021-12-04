@@ -9,6 +9,8 @@ class AbstractRid(ABC):
 
 
 class ReadJson(AbstractRid):
+    """This class rid json files"""
+
     def read_json(self, filename):
         with open(filename, 'r') as file:
             data = json.loads(file.read())

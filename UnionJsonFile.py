@@ -8,6 +8,8 @@ class AbstractUnion(ABC):
 
 
 class UnionJson(AbstractUnion):
+    """This class create dict with name rooms and students"""
+
     def result_dict(self, students_dict, rooms_dict):
         for room in rooms_dict:
             room['students'] = []
